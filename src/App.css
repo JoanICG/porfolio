@@ -12,7 +12,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #ff0000aa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -28,8 +28,14 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  /* This rule targets the first link's logo (Vite) */
+  a:nth-of-type(1) .logo {
     animation: logo-spin infinite 20s linear;
+  }
+
+  /* This rule targets the second link's logo (React) */
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 1s linear;
   }
 }
 
@@ -38,5 +44,5 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #df4747;
 }
